@@ -1,0 +1,38 @@
+{
+    "matrno": "123456",
+    "name": "Wesley Urban",
+    "esas": [
+        {
+            "id": "1",
+            "title": "ESA 1",
+            "description": "This is the first ESA",
+            "backgroundColor": "#1f77b4",
+            "assests": [
+                {
+                    "name": "Asset 1",
+                    "href": "1000"
+                },
+                {
+                    "name": "Asset 2",
+                    "href": "2000"
+                }
+            ]
+        },
+        {
+            "id": "2",
+            "title": "ESA 2",
+            "description": "This is the first ESA",
+            "backgroundColor": "#007eff",
+            "assests": [
+                {
+                    "name": "Asset 2",
+                    "href": "2000"
+                },
+                {
+                    "name": "Asset 2",
+                    "href": "2000"
+                }
+            ]
+        }
+    ]
+}
