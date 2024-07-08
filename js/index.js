@@ -1,61 +1,63 @@
-window.onload = function () {
- const sidebar = document.getElementById("sidebar");
- const toggle = document.getElementById("toggle");
+import { animateText } from "/js/animation.js";
+import setCursor from "/js/cursor.js";
+import { buildSection } from "/js/section.js";
+import { toggleSidebar, buildMenu } from "/js/sidebar.js";
 
- toggle.addEventListener("click", function () {
-  switch (sidebar.dataset.state) {
-   case "open":
-    sidebar.dataset.state = "closed";
-    document.documentElement.style.setProperty("--sidebar-width", "0");
-    sidebar.classList.add("hide");
-    sidebar.classList.remove("show");
-    break;
-   case "closed":
-    sidebar.dataset.state = "open";
-    document.documentElement.style.setProperty("--sidebar-width", "120px");
-    sidebar.classList.add("show");
-    sidebar.classList.remove("hide");
-    break;
-  }
- });
-};
-
-document.addEventListener("DOMContentLoaded", () => {
- const cursor = document.createElement("div");
- cursor.classList.add("cursor");
- document.body.appendChild(cursor);
-
- // Create a dot element
- const dot = document.createElement("div");
- dot.classList.add("dot");
- document.body.appendChild(dot);
-
- document.addEventListener("mousemove", (e) => {
-  const mouseX = e.clientX;
-  const mouseY = e.clientY;
-
-  // Move the dot immediately with the cursor
-  dot.style.left = `${mouseX}px`;
-  dot.style.top = `${mouseY}px`;
-
-  // Apply a delay effect to the cursor
-  setTimeout(() => {
-   cursor.style.left = `${mouseX}px`;
-   cursor.style.top = `${mouseY}px`;
-  }, 75); // Adjusted delay
- });
-
- // Optionally, hide the custom cursor on elements that should use the default cursor
- document.querySelectorAll("section").forEach((el) => {
-  el.addEventListener("mouseenter", () => {
-   cursor.style.opacity = 1;
-   dot.style.opacity = 1; // Show the dot when the custom cursor is hidden
-   document.body.style.cursor = "none";
-  });
-  el.addEventListener("mouseleave", () => {
-   cursor.style.opacity = 0;
-   dot.style.opacity = 0; // Hide the dot when the custom cursor is visible
-   document.body.style.cursor = "default";
-  });
- });
+document.addEventListener("DOMContentLoaded", async () => {
+ const config = await getConfig();
+ try {
+  setCursor();
+  toggleSidebar();
+  setValues(config);
+  buildMenu(config.esas);
+  buildSection(config.esas);
+  animateText(
+   document.getElementById("introHeadline"),
+   "Portfolio für Mediendesign 2"
+  );
+ } catch (error) {
+  console.error(error);
+ }
 });
+
+async function getConfig() {
+ try {
+  const response = await fetch("assets/esa.json");
+  const config = await response.json();
+  console.log({ config });
+  return config;
+ } catch (error) {
+  console.error(error);
+  return {};
+ }
+}
+
+/**
+ * @typedef {Object} ESAFile
+ * @property {string} matrno - The matriculation number of the student.
+ * @property {string} name - The name of the student.
+ * @property {ESA[]} esas - An array of ESAs associated with the student.
+ */
+
+/**
+ * @typedef {Object} ESA
+ * @property {string} id - The unique identifier for the ESA.
+ * @property {string} title - The title of the ESA.
+ * @property {string} description - A brief description of the ESA.
+ * @property {Asset[]} assets - A list of assets associated with the ESA.
+ * @property {string} [assests] - Typo in original data, included for compatibility.
+ */
+
+/**
+ * @typedef {Object} Asset
+ * @property {string} name - The name of the asset.
+ * @property {string} href - The reference or link to the asset.
+ */
+
+/**
+ * @param {ESAFile} config
+ */
+function setValues(config) {
+ document.getElementById("name").innerHTML = config.name;
+ document.getElementById("matrno").innerHTML = config.matrno;
+}
