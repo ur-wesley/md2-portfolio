@@ -63,6 +63,7 @@ sidebar {
  box-sizing: border-box;
  transition: all 0.3s;
 
+ 
  #about {
   display: flex;
   flex-direction: column;
