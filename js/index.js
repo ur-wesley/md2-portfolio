@@ -45,13 +45,14 @@ async function getConfig() {
  * @property {string} title - The title of the ESA.
  * @property {string} description - A brief description of the ESA.
  * @property {Asset[]} assets - A list of assets associated with the ESA.
- * @property {string} [assests] - Typo in original data, included for compatibility.
  */
 
 /**
  * @typedef {Object} Asset
  * @property {string} name - The name of the asset.
  * @property {string} href - The reference or link to the asset.
+ * @property {string} alt - The alternative text for the asset.
+ * @property {string} description - A brief description of the asset.
  */
 
 /**
