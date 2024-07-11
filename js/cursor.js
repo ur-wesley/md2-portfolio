@@ -35,4 +35,6 @@ export default function setCursor() {
    document.body.style.cursor = "default";
   });
  });
+
+ //  if cursor on image, change cursor to zoom-in
 }

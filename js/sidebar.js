@@ -28,7 +28,6 @@ export function toggleSidebar() {
 export function buildMenu(esas) {
  const nav = document.getElementById("nav");
  for (const esa of esas) {
-  // create this structure:      <li><a href="#esa3">ESA 3</a></li>
   const li = document.createElement("li");
   const a = document.createElement("a");
   a.href = `#esa${esa.id}`;
