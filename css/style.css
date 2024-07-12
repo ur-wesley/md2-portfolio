@@ -177,7 +177,7 @@ sidebar {
  border-radius: 50%;
  backdrop-filter: blur(10px) saturate(5) hue-rotate(90deg) brightness(1.5);
  pointer-events: none;
- transform: translate(-50%, -50%);
+ /* transform: translate(-50%, -50%); */
  opacity: 0.2;
  transition: transform 0.1s linear;
  z-index: 1000;
@@ -193,4 +193,16 @@ sidebar {
  pointer-events: none;
  transform: translate(-50%, -50%);
  z-index: 1001;
+}
+
+.download {
+ border: 2px transparent solid;
+ border-radius: 1rem;
+ padding: 0.5rem 1rem;
+ transition: all 0.3s;
+ cursor: pointer;
+ &:hover {
+  border: 2px var(--secondary-color) solid;
+  color: var(--secondary-color);
+ }
 }
