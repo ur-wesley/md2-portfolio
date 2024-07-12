@@ -12,29 +12,40 @@ export default function setCursor() {
   const mouseX = e.clientX;
   const mouseY = e.clientY;
 
-  // Move the dot immediately with the cursor
   dot.style.left = `${mouseX}px`;
   dot.style.top = `${mouseY}px`;
 
-  // Apply a delay effect to the cursor
   setTimeout(() => {
    cursor.style.left = `${mouseX}px`;
    cursor.style.top = `${mouseY}px`;
-  }, 75); // Adjusted delay
+  }, 75);
  });
 
- document.querySelectorAll("main").forEach((el) => {
+ document.querySelectorAll("main").forEach(async (el) => {
   el.addEventListener("mouseenter", () => {
    cursor.style.opacity = 1;
-   dot.style.opacity = 1; // Show the dot when the custom cursor is hidden
+   dot.style.opacity = 1;
    document.body.style.cursor = "none";
   });
   el.addEventListener("mouseleave", () => {
    cursor.style.opacity = 0;
-   dot.style.opacity = 0; // Hide the dot when the custom cursor is visible
+   dot.style.opacity = 0;
    document.body.style.cursor = "default";
   });
- });
 
- //  if cursor on image, change cursor to zoom-in
+  //  if cursor on image, update cursor size and add svg "arrow-expand" in the center
+  const svg = document.createElement("img");
+  svg.src = "/assets/arrow-expand.svg";
+  el.addEventListener("mouseover", (e) => {
+   if (e.target.tagName === "IMG") {
+    // cursor.style.transform = "scale(2)";
+    // transform: translate(-50%, -50%);
+    cursor.style.transform = "translate(-50%, -50%) scale(2)";
+    cursor.appendChild(svg);
+   } else {
+    cursor.style.transform = "translate(-50%, -50%)";
+    cursor.innerHTML = "";
+   }
+  });
+ });
 }

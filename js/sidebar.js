@@ -33,6 +33,15 @@ export function buildMenu(esas) {
   a.href = `#esa${esa.id}`;
   a.textContent = esa.title;
   li.appendChild(a);
+  li.id = `nav-esa${esa.id}`;
   nav.appendChild(li);
  }
+ const button = document.createElement("button");
+ button.textContent = "Download";
+ button.classList.add("download");
+
+ button.addEventListener("click", () => {
+  window.open("/assets/gesamt.pdf");
+ });
+ nav.appendChild(button);
 }

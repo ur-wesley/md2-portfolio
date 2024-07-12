@@ -4,7 +4,12 @@ import { createGallery } from "/js/gallery.js";
  * @param {import(".").ESA[]} esas
  */
 export function buildSection(esas) {
+ const mouse = { x: 0, y: 0 };
  const content = document.getElementById("content");
+ content.addEventListener("mousemove", (e) => {
+  mouse.x = e.clientX;
+  mouse.y = e.clientY;
+ });
 
  for (const esa of esas) {
   const section = document.createElement("section");
@@ -30,7 +35,7 @@ export function buildSection(esas) {
   const imageDescription = document.createElement("div");
   imageDescription.id = `image-description-${esa.id}`;
   imageDescription.classList.add("image-description");
-  descriptionDiv.appendChild(imageDescription);
+  //   descriptionDiv.appendChild(imageDescription);
 
   galleryDiv.id = `esa${esa.id}`;
   galleryDiv.classList.add("content");
