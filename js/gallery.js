@@ -104,6 +104,19 @@ function galleryEsa13(container, assets, id) {
 
   wrapper.appendChild(img);
  }
+ //  add a heart to the top right corner for the first asset
+ const heart = document.createElement("img");
+ heart.src = "/assets/heart.svg";
+ heart.style.position = "absolute";
+ heart.style.top = "0";
+ heart.style.right = "0";
+ heart.style.width = "2rem";
+ heart.style.height = "2rem";
+ heart.style.cursor = "pointer";
+ //  make the svg background red
+ heart.style.fill = "red";
+
+ container.querySelector(".img-wrapper").appendChild(heart);
 }
 
 function galleryEsa41(container, assets, id) {

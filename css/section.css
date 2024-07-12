@@ -54,6 +54,7 @@ section {
 .img-wrapper {
  overflow: hidden;
  height: fit-content;
+ position: relative;
 }
 
 .gallery {
