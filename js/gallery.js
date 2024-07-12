@@ -82,9 +82,12 @@ function imageModal(asset) {
 }
 
 function galleryEsa13(container, assets, id) {
+ let i = 0;
  for (const asset of assets) {
+  i += 1;
   const wrapper = document.createElement("div");
   container.appendChild(wrapper);
+  wrapper.id = `esa-${id}-image-${i}`;
   wrapper.classList.add("img-wrapper");
   const img = document.createElement("img");
   img.src = asset.href;
@@ -153,7 +156,29 @@ function galleryEsa42(container, assets, id) {
 }
 
 function galleryEsa51(container, assets, id) {
- // two sections with one of the image from assets[0], the other one with the description from assets[0]
+ const div = document.createElement("div");
+ container.appendChild(div);
+ div.style.display = "flex";
+ div.style.flexDirection = "row";
+ div.style.justifyContent = "space-between";
+
+ const img = document.createElement("img");
+ img.src = assets[0].href;
+ img.alt = assets[0].alt;
+ img.style.width = "100%";
+ img.style.height = "auto";
+ img.style.flexGrow = 1;
+ img.style.borderRadius = "2rem";
+ img.style.objectFit = "contain";
+
+ const description = document.createElement("div");
+ description.textContent = assets[0].description;
+ description.style.width = "80ch";
+ description.style.padding = "1rem";
+ description.style.whiteSpace = "pre-wrap";
+ description.style.textAlign = "justify";
+ div.appendChild(description);
+ div.appendChild(img);
 }
 
 function galleryEsa52(container, assets, id) {
@@ -161,9 +186,9 @@ function galleryEsa52(container, assets, id) {
  video.src = assets[0].href;
  video.autoplay = false;
  video.controls = true;
- video.style.maxWidth = "100%";
+ video.style.width = "100%";
+ video.style.height = "100%";
  video.style.aspectRatio = "16/9";
- video.style.objectFit = "cover";
- video.style.cursor = "zoom-in";
+ video.style.objectFit = "contain";
  container.appendChild(video);
 }
