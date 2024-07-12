@@ -48,7 +48,7 @@
         },
         {
           "name": "Asset 2",
-          "description": "Das Ei wurde von der Seite fotografiert. Die Lichtquelle war direkt über dem Ei positioniert.",
+          "description": "Das Ei im Profil. Die Lichtquelle über dem Ei wirft einen scharfen Schatten auf den Boden.",
           "href": "/assets/esa2/3.png",
           "alt": ""
         }
@@ -74,7 +74,7 @@
         },
         {
           "name": "Asset 2",
-          "description": "Die knallrote Blume wurde Frontal fotografiert, um die Farben und Formen hervorzuheben. Der Hintergrund ist unscharf, um die Blume in den Fokus zu rücken.",
+          "description": "Die knallrote Blume wurde Frontal fotografiert, um die Farben und Formen hervorzuheben. Der Fokus liegt zentral auf der Blüte, wodurch der Hintergrund unscharf wird.",
           "href": "/assets/esa3/3.png",
           "alt": ""
         }
@@ -97,7 +97,7 @@
     {
       "id": "5",
       "title": "Album Cover",
-      "description": "Basierend auf dem Moodboard soll ein Album Cover gestaltet werden.\nDie Komplette Komposition wirkt etwas geheimnisvoll, futuristisch und angenehm für das Auge. Bei dem Cover habe ich mithilfe von Bildgeneratoren und meinem Moodboard das Cover erstellt.",
+      "description": "Basierend auf dem Moodboard soll ein Album Cover gestaltet werden.\nDie Komplette Komposition wirkt etwas geheimnisvoll, futuristisch und angenehm für das Auge. Das Cover habe ich mithilfe von Bildgeneratoren und meinem Moodboard erstellt.",
       "backgroundColor": "#0d0d0d",
       "assets": [
         {
