@@ -10,19 +10,19 @@
       "assets": [
         {
           "name": "Asset 1",
-          "description": "Der Apfel wurde unter einer von oben gerichteten Lichtquelle fotografiert, um seine Textur und Farben hervorzuheben. Die Kamera war auf einem Stativ befestigt, um eine konstante Perspektive zu gewährleisten.",
+          "description": "Der Apfel wurde unter einer von oben gerichteten Lichtquelle fotografiert, um seine Textur und Farben hervorzuheben. Die Kamera war auf einem Stativ befestigt, um eine konstante Perspektive zu leisten.",
           "href": "/assets/esa1/1.png",
           "alt": "Apfel mit Lichtquelle von oben"
         },
         {
           "name": "Asset 2",
-          "description": "Der Apfel wurde frontal beleuchtet, sodass der Schatten des Apfels auf dem Hintergrund sichtbar ist. Die Kamera war auf einem Stativ befestigt, um eine konstante Perspektive zu gewährleisten.",
+          "description": "Der Apfel wurde frontal beleuchtet, sodass der Schatten des Apfels auf dem Hintergrund sichtbar ist. Die Kamera war auf einem Stativ befestigt, um eine konstante Perspektive zu leisten.",
           "href": "/assets/esa1/2.png",
           "alt": ""
         },
         {
           "name": "Asset 2",
-          "description": "Bei dem Foto wurden zwei Lichtquellen in einem 45°-Winkel zum Apfel positioniert, um mehrere Schatten zu haben. Die Kamera war auf einem Stativ befestigt, um eine konstante Perspektive zu gewährleisten.",
+          "description": "Bei dem Foto wurden zwei Lichtquellen in einem 45°-Winkel zum Apfel positioniert, um mehrere Schatten zu haben. Die Kamera war auf einem Stativ befestigt, um eine konstante Perspektive zu leisten.",
           "href": "/assets/esa1/3.png",
           "alt": ""
         }
