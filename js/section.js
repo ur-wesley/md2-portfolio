@@ -29,13 +29,13 @@ export function buildSection(esas) {
   descriptionDiv.appendChild(title);
 
   const description = document.createElement("p");
-  description.textContent = esa.description;
+  description.innerHTML = esa.description;
+  description.style.whiteSpace = "pre-wrap";
   descriptionDiv.appendChild(description);
 
   const imageDescription = document.createElement("div");
   imageDescription.id = `image-description-${esa.id}`;
   imageDescription.classList.add("image-description");
-  //   descriptionDiv.appendChild(imageDescription);
 
   galleryDiv.id = `esa${esa.id}`;
   galleryDiv.classList.add("content");

@@ -92,14 +92,21 @@ function galleryEsa13(container, assets, id) {
   const img = document.createElement("img");
   img.src = asset.href;
   img.alt = asset.alt;
-  img.style.maxWidth = "100%";
+  img.style.width = "100%";
+  img.style.height = "100%";
   img.style.aspectRatio = "1/1";
   img.style.objectFit = "cover";
 
-  img.addEventListener("mouseenter", () => {
-   const descContainer = document.getElementById(`image-description-${id}`);
-   descContainer.innerHTML = asset.description;
-  });
+  const desc = document.createElement("div");
+  desc.textContent = asset.description;
+  desc.style.padding = "1rem";
+  desc.style.height = "100%";
+  desc.style.width = "40ch";
+  // desc.style.textAlign = "justify";
+  desc.style.boxSizing = "border-box";
+  desc.style.display = "grid";
+  desc.style.placeItems = "center";
+  wrapper.appendChild(desc);
 
   img.addEventListener("click", () => {
    imageModal(asset);
@@ -107,17 +114,14 @@ function galleryEsa13(container, assets, id) {
 
   wrapper.appendChild(img);
  }
- //  add a heart to the top right corner for the first asset
  const heart = document.createElement("img");
  heart.src = "/assets/heart.svg";
  heart.style.position = "absolute";
- heart.style.top = "0";
+ heart.style.bottom = "0";
  heart.style.right = "0";
  heart.style.width = "2rem";
  heart.style.height = "2rem";
  heart.style.cursor = "pointer";
- //  make the svg background red
- heart.style.fill = "red";
 
  container.querySelector(".img-wrapper").appendChild(heart);
 }
@@ -138,7 +142,6 @@ function galleryEsa41(container, assets, id) {
 }
 
 function galleryEsa42(container, assets, id) {
- // two image next to each other from assets
  for (const asset of assets) {
   const img = document.createElement("img");
   img.src = asset.href;
@@ -158,25 +161,18 @@ function galleryEsa42(container, assets, id) {
 function galleryEsa51(container, assets, id) {
  const div = document.createElement("div");
  container.appendChild(div);
- div.style.display = "flex";
- div.style.flexDirection = "row";
- div.style.justifyContent = "space-between";
+ div.id = "gallery-6-content";
 
  const img = document.createElement("img");
  img.src = assets[0].href;
  img.alt = assets[0].alt;
- img.style.width = "100%";
- img.style.height = "auto";
- img.style.flexGrow = 1;
- img.style.borderRadius = "2rem";
- img.style.objectFit = "contain";
+ img.addEventListener("click", () => {
+  imageModal(assets[0]);
+ });
 
  const description = document.createElement("div");
- description.textContent = assets[0].description;
- description.style.width = "80ch";
- description.style.padding = "1rem";
- description.style.whiteSpace = "pre-wrap";
- description.style.textAlign = "justify";
+ description.id = "description-esa5";
+ description.innerHTML = assets[0].description;
  div.appendChild(description);
  div.appendChild(img);
 }
