@@ -5,24 +5,24 @@
     {
       "id": "1",
       "title": "Der Apfel",
-      "description": "This is the first ESA",
+      "description": "In dieser Aufgabe soll ein einzelner Apfel unter verschiedenen Beleuchtungsbedingungen fotografiert werden.",
       "backgroundColor": "#0d0d0d",
       "assets": [
         {
           "name": "Asset 1",
-          "description": "lorem ipsum dolor sit amet",
+          "description": "Der Apfel wurde unter einer von oben gerichteten Lichtquelle fotografiert, um seine Textur und Farben hervorzuheben. Die Kamera war auf einem Stativ befestigt, um eine konstante Perspektive zu gewährleisten.",
           "href": "/assets/esa1/1.png",
-          "alt": ""
+          "alt": "Apfel mit Lichtquelle von oben"
         },
         {
           "name": "Asset 2",
-          "description": "lorem ipsum dolor sit amet",
+          "description": "Der Apfel wurde frontal beleuchtet, sodass der Schatten des Apfels auf dem Hintergrund sichtbar ist. Die Kamera war auf einem Stativ befestigt, um eine konstante Perspektive zu gewährleisten.",
           "href": "/assets/esa1/2.png",
           "alt": ""
         },
         {
           "name": "Asset 2",
-          "description": "",
+          "description": "Bei dem Foto wurden zwei Lichtquellen in einem 45°-Winkel zum Apfel positioniert, um mehrere Schatten zu haben. Die Kamera war auf einem Stativ befestigt, um eine konstante Perspektive zu gewährleisten.",
           "href": "/assets/esa1/3.png",
           "alt": ""
         }
@@ -31,24 +31,24 @@
     {
       "id": "2",
       "title": "Das Ei",
-      "description": "This is the first ESA",
+      "description": "Diese Aufgabe konzentriert sich auf die Komposition und Aufnahmegrößen. Es soll ein weißes Ei vor einem weißen Hintergrund in verschiedenen Aufnahmegrößen und Positionen aufgenommen werden.",
       "backgroundColor": "#0d0d0d",
       "assets": [
         {
           "name": "Asset 2",
-          "description": "",
+          "description": "Das Ei wurde bei der Verwendung zweier Lichtquellen von halb oben, halb vorne gegen das Licht fotografiert.",
           "href": "/assets/esa2/1.png",
           "alt": ""
         },
         {
           "name": "Asset 2",
-          "description": "",
+          "description": "Das Ei wurde direkt von oben beleuchtet und fotografiert.",
           "href": "/assets/esa2/2.png",
           "alt": ""
         },
         {
           "name": "Asset 2",
-          "description": "",
+          "description": "Das Ei wurde von der Seite fotografiert. Die Lichtquelle war direkt über dem Ei positioniert.",
           "href": "/assets/esa2/3.png",
           "alt": ""
         }
@@ -57,24 +57,24 @@
     {
       "id": "3",
       "title": "Die Blume",
-      "description": "This is the first ESA",
+      "description": "In dieser Aufgabe geht es darum, Farbkontraste durch die Fotografie von Blumen, Blüten oder Blättern zu erfassen.",
       "backgroundColor": "#0d0d0d",
       "assets": [
         {
           "name": "Asset 2",
-          "description": "",
+          "description": "Die Blumen wurden bei Tageslicht fotografiert mit dem Fokus auf die vorderste Blüte, wodurch die Blüten im Hintergrund unscharf werden.",
           "href": "/assets/esa3/1.png",
           "alt": ""
         },
         {
           "name": "Asset 2",
-          "description": "",
+          "description": "Die Zimmerpflanze wurde bei Tageslicht im Garten fotografiert. Hier liegt der Kontrast zwischen den grün-rot gesprenkelten Blättern und dem grünen Hintergrund.",
           "href": "/assets/esa3/2.png",
           "alt": ""
         },
         {
           "name": "Asset 2",
-          "description": "",
+          "description": "Die knallrote Blume wurde Frontal fotografiert, um die Farben und Formen hervorzuheben. Der Hintergrund ist unscharf, um die Blume in den Fokus zu rücken.",
           "href": "/assets/esa3/3.png",
           "alt": ""
         }
@@ -83,7 +83,7 @@
     {
       "id": "4",
       "title": "Moodboard",
-      "description": "This is the first ESA",
+      "description": "Es soll ein Moodboard, das Farben, Formen, Materialien und Schriften für die Gestaltung eines Album Covers zusammenfasst, erstellt werden.\nIch habe mich dabei an warmen, leuchtenden Farben orientiert, die auf mich modern wirken. Die Schriftart ist kantig und Vergleichbar mit alten Segment anzeigen.",
       "backgroundColor": "#0d0d0d",
       "assets": [
         {
@@ -97,7 +97,7 @@
     {
       "id": "5",
       "title": "Album Cover",
-      "description": "This is the first ESA",
+      "description": "Basierend auf dem Moodboard soll ein Album Cover gestaltet werden.\nDie Komplette Komposition wirkt etwas geheimnisvoll, futuristisch und angenehm für das Auge. Bei dem Cover habe ich mithilfe von Bildgeneratoren und meinem Moodboard das Cover erstellt.",
       "backgroundColor": "#0d0d0d",
       "assets": [
         {
@@ -117,28 +117,28 @@
     {
       "id": "6",
       "title": "Logoanimation",
-      "description": "This is the first ESA",
+      "description": "Erstellung einer Wort-Bildmarke ohne Animation.",
       "backgroundColor": "#0d0d0d",
       "assets": [
         {
           "name": "Asset 2",
-          "description": "",
+          "description": "<h3>Konzept</h3><span>Das Logo-Design für Wesley Films beginnt mit Wolken, die von außen in den Bildschirm hineinfahren und die Sicht verdecken. Der Hintergrund ist zunächst verregnet. Nach einer kurzen Verzögerung steigen die Wolken ein Stück nach oben, sodass der Schriftzug \"w4y\" sichtbar wird. Anschließend fallen alle Buchstaben des Wortes \"wesley\" gleichzeitig nach unten. Während die Buchstaben fallen, ändert sich der Hintergrund von verregnet zu sonnig. Zum Abschluss blendet sich am unteren Rand der Schriftzug \"films\" ein, sodass das vollständige Logo \"wesley films\" erscheint.</span>",
           "href": "/assets/esa5/filmintro.png",
-          "alt": ""
+          "alt": "Das Abschlussbild meiner Filmanimation"
         }
       ]
     },
     {
       "id": "7",
       "title": "Film Intro",
-      "description": "This is the first ESA",
+      "description": "Erstellung einer passenden Animation für die Wort-Bildmarke. Die Animation soll 10 Sekunden lang sein.",
       "backgroundColor": "#0d0d0d",
       "assets": [
         {
           "name": "Asset 2",
-          "description": "",
+          "description": "Eine Animation erstellt mit Blender. Die Bildquellen für den Hintergrund sind in der PDF zu finden.",
           "href": "/assets/esa5/film.mp4",
-          "alt": ""
+          "alt": "10s lange Film-Intro Animation"
         }
       ]
     }
