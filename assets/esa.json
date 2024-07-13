@@ -5,24 +5,24 @@
     {
       "id": "1",
       "title": "Der Apfel",
-      "description": "In dieser Aufgabe soll ein einzelner Apfel unter verschiedenen Beleuchtungsbedingungen fotografiert werden.",
+      "description": "Ich habe einen Apfel unter verschiedenen Beleuchtungsbedingungen fotografiert. Die Kamera war dabei auf einem Stativ befestigt, um eine konstante Perspektive zu leisten.",
       "backgroundColor": "#0d0d0d",
       "assets": [
         {
           "name": "Asset 1",
-          "description": "Der Apfel wurde unter einer von oben gerichteten Lichtquelle fotografiert, um seine Textur und Farben hervorzuheben. Die Kamera war auf einem Stativ befestigt, um eine konstante Perspektive zu leisten.",
+          "description": "Der Apfel wurde unter einer von oben gerichteten Lichtquelle fotografiert, um seine Textur und Farben hervorzuheben.",
           "href": "/assets/esa1/1.png",
           "alt": "Apfel mit Lichtquelle von oben"
         },
         {
           "name": "Asset 2",
-          "description": "Der Apfel wurde frontal beleuchtet, sodass der Schatten des Apfels auf dem Hintergrund sichtbar ist. Die Kamera war auf einem Stativ befestigt, um eine konstante Perspektive zu leisten.",
+          "description": "Der Apfel wurde frontal beleuchtet, sodass der Schatten des Apfels auf dem Hintergrund sichtbar ist.",
           "href": "/assets/esa1/2.png",
           "alt": ""
         },
         {
           "name": "Asset 2",
-          "description": "Bei dem Foto wurden zwei Lichtquellen in einem 45°-Winkel zum Apfel positioniert, um mehrere Schatten zu haben. Die Kamera war auf einem Stativ befestigt, um eine konstante Perspektive zu leisten.",
+          "description": "Bei dem Foto wurden zwei Lichtquellen in einem 45°-Winkel zum Apfel positioniert, um mehrere Schatten zu haben.",
           "href": "/assets/esa1/3.png",
           "alt": ""
         }
@@ -31,7 +31,7 @@
     {
       "id": "2",
       "title": "Das Ei",
-      "description": "Diese Aufgabe konzentriert sich auf die Komposition und Aufnahmegrößen. Es soll ein weißes Ei vor einem weißen Hintergrund in verschiedenen Aufnahmegrößen und Positionen aufgenommen werden.",
+      "description": "Bei dem Bild habe ich mich auf die Komposition und Aufnahmegrößen konzentriert. Das Modell ist ein weißes Ei vor einem weißen Hintergrund, das in verschiedenen Aufnahmegrößen und Positionen aufgenommen wurde.",
       "backgroundColor": "#0d0d0d",
       "assets": [
         {
@@ -57,7 +57,7 @@
     {
       "id": "3",
       "title": "Die Blume",
-      "description": "In dieser Aufgabe geht es darum, Farbkontraste durch die Fotografie von Blumen, Blüten oder Blättern zu erfassen.",
+      "description": "Um Farbkontraste zu untersuchen, habe ich Blumen und Blüten fotografiert.",
       "backgroundColor": "#0d0d0d",
       "assets": [
         {
@@ -83,7 +83,7 @@
     {
       "id": "4",
       "title": "Moodboard",
-      "description": "Es soll ein Moodboard, das Farben, Formen, Materialien und Schriften für die Gestaltung eines Album Covers zusammenfasst, erstellt werden.\nIch habe mich dabei an warmen, leuchtenden Farben orientiert, die auf mich modern wirken. Die Schriftart ist kantig und Vergleichbar mit alten Segment anzeigen.",
+      "description": "Ich habe ein Moodboard, das Farben, Formen, Materialien und Schriften für die Gestaltung eines Album Covers zusammenfasst, erstellt.\nDabei habe ich mich an warmen, leuchtenden Farben orientiert, die auf mich modern wirken. Die Schriftart ist kantig und Vergleichbar mit alten Segment-Anzeigen.",
       "backgroundColor": "#0d0d0d",
       "assets": [
         {
@@ -97,7 +97,7 @@
     {
       "id": "5",
       "title": "Album Cover",
-      "description": "Basierend auf dem Moodboard soll ein Album Cover gestaltet werden.\nDie Komplette Komposition wirkt etwas geheimnisvoll, futuristisch und angenehm für das Auge. Das Cover habe ich mithilfe von Bildgeneratoren und meinem Moodboard erstellt.",
+      "description": "Basierend auf dem Moodboard habe ich ein Album Cover gestaltet.\nDie Komplette Komposition wirkt etwas geheimnisvoll, futuristisch und angenehm für das Auge. Das Cover habe ich mithilfe von Bildgeneratoren und meinem Moodboard erstellt.",
       "backgroundColor": "#0d0d0d",
       "assets": [
         {
@@ -131,7 +131,7 @@
     {
       "id": "7",
       "title": "Film Intro",
-      "description": "Erstellung einer passenden Animation für die Wort-Bildmarke. Die Animation soll 10 Sekunden lang sein.",
+      "description": "Erstellung einer passenden Animation für die Wort-Bildmarke. Die Animation dauert 10 Sekunden lang.",
       "backgroundColor": "#0d0d0d",
       "assets": [
         {
